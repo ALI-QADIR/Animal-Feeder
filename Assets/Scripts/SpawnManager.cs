@@ -39,12 +39,11 @@ public class SpawnManager : MonoBehaviour
             spawnPos = new(spawnPosX, 0, Random.Range(-spawnRangeZ, spawnRangeZ));
         }
        
-        // generate random animal index for animal prefab array
-        int animalIndex = Random.Range(0, animalPrefab.Length);
+
+        int animalIndex = Random.Range(0, animalPrefab.Length);               // generate random animal index for animal prefab array
 
         Quaternion spawnRotation = Quaternion.Euler(0, spawnRotationY, 0);    // generate spawn rotation
-        // spawn animal at random position
-        Instantiate(animalPrefab[animalIndex], spawnPos, spawnRotation);
-        // Instantiate(animalPrefab[animalIndex], spawnPos, animalPrefab[animalIndex].transform.rotation);
+        
+        Instantiate(animalPrefab[animalIndex], spawnPos, spawnRotation);      // spawn animal at random position
     }
 }
