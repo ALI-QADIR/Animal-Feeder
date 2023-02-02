@@ -13,21 +13,22 @@ public class DetectCollision : MonoBehaviour
 
         // get tag of the other object
         string tag = other.gameObject.tag;
-        Debug.Log("Tag of the other object: " + tag);
+        // Debug.Log("Tag of the other object: " + tag);
 
         // check if the tag is "Projectile"
         if (tag == "Projectile")
         {
+            GameManager.IncrementScore();   // Increment the score
             Destroy(gameObject);    // Destroy the animal
             Destroy(other.gameObject);  // Destroy the projectile
         }
         // check if the tag is "Player"
         else if (tag == "Player")
         {
-            Debug.Log("Collision with player");
-            // gameOverCanvas.SetActive(true);     // Show the game over canvas
-            Time.timeScale = 0;                 // Stop the game
-            Debug.Log("Game Over!");
+            // Debug.Log("Collision with player");
+            Destroy(gameObject);    // Destroy the animal
+            // decrement the lives
+            GameManager.DecrementLives();
         }
         else if (tag == "Animal")
         {

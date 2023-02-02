@@ -24,9 +24,9 @@ public class DestroyOutOfBounds : MonoBehaviour
         else if (transform.position.z < lowerbound)
         {
             // gameOverCanvas.SetActive(true);     // Show the game over canvas
-            Time.timeScale = 0;                 // Stop the game
             Destroy(gameObject);                // Destroy the animal
-            Debug.Log("Game Over!");
+
+            GameManager.DecrementLives();                // Decrement the lives
         }
         else if (transform.position.x > rightbound)
         {
