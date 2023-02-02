@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 572819055518630413}
   m_Layer: 0
   m_Name: Animal_Horse_Black
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,7 +470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02de029dfec64864a8a53e368ab99a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 382731384979595040, guid: dca9d26acca271c4daeeadecfbbdcde8, type: 3}
 --- !u!65 &3375030754547932519
 BoxCollider:
   m_ObjectHideFlags: 0
