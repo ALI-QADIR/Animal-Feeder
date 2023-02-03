@@ -14,13 +14,14 @@ public class PlayerController : MonoBehaviour
     // private variables
     private float projectileYOffset = 1.5f;                                                  // Y axis offset of projectile from player
     private float projectileZOffset = 0.5f;
+    private static bool gameActive = true;
 
     // function to move player
     void MovePlayer()
     {
         // Move the player left and right
         horizontalInput = Input.GetAxis("Horizontal");                                      // get horizontal input from player
-        transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);      // move player horizontally
+        transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);      // move player horizontally
         // move the player forward and backward
         if (Input.GetKey(KeyCode.W))                                                        // if W is pressed, move forward
         {
@@ -50,11 +51,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // set Game Active to false
+    public static void SetGameOver()
+    {
+        gameActive = false;
+    }
+
     // function to launch projectile
     void LaunchProjectile()
     {
+
         // if space is pressed, launch a projectile from the player
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && gameActive)
         {
             // instantiate projectile at player position with an offset in the y direction
             Instantiate(projectilePrefab, transform.position + new Vector3(0, projectileYOffset, projectileZOffset), projectilePrefab.transform.rotation);

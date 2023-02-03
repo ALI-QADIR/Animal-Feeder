@@ -394,7 +394,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -416,11 +416,14 @@ MonoBehaviour:
   spawnPosZ: 60
   spawnRotationY: 180
   spawnDelay: 2
-  spawnInterval: 1.5
+  spawnInterval: 5
   animalPrefab:
   - {fileID: 8903504724283748463, guid: 1853877995016614ca28396cddf59144, type: 3}
   - {fileID: 4990709448492188989, guid: 038125a3a0b8cc5498b7ca3d6adbde92, type: 3}
   - {fileID: 6589094045408583777, guid: 68bc287612d02f6439e0ac000694695b, type: 3}
+  - {fileID: 6818140946566365449, guid: d6313aa1c7be2f84d936711a4bfb5ab6, type: 3}
+  - {fileID: 5529846090361038472, guid: 504e78417f171094c823d9d690fa82d1, type: 3}
+  - {fileID: 2802271951684643518, guid: 8371fee87a223794a8757ea98e51b2e9, type: 3}
 --- !u!4 &412380994
 Transform:
   m_ObjectHideFlags: 0
@@ -699,7 +702,7 @@ GameObject:
   m_Layer: 0
   m_Name: VerticalSpawnerLeft
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -716,12 +719,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnRangeX: 0
-  spawnRangeZ: 15
+  spawnRangeZ: 12
   spawnPosX: -18
   spawnPosZ: 0
   spawnRotationY: 90
   spawnDelay: 5
-  spawnInterval: 3
+  spawnInterval: 7
   animalPrefab:
   - {fileID: 2802271951684643518, guid: 8371fee87a223794a8757ea98e51b2e9, type: 3}
   - {fileID: 5529846090361038472, guid: 504e78417f171094c823d9d690fa82d1, type: 3}
@@ -754,7 +757,7 @@ GameObject:
   m_Layer: 0
   m_Name: VerticalSpawnerRight
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -771,12 +774,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnRangeX: 0
-  spawnRangeZ: 15
+  spawnRangeZ: 12
   spawnPosX: 18
   spawnPosZ: 0
   spawnRotationY: 270
   spawnDelay: 7
-  spawnInterval: 3
+  spawnInterval: 9
   animalPrefab:
   - {fileID: 2802271951684643518, guid: 8371fee87a223794a8757ea98e51b2e9, type: 3}
   - {fileID: 5529846090361038472, guid: 504e78417f171094c823d9d690fa82d1, type: 3}
@@ -847,7 +850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.7075472, b: 0.12358945, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -856,7 +859,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 20
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1053,7 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1062,7 +1065,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 20
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1548,7 +1551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

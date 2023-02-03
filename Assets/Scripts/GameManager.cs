@@ -29,24 +29,19 @@ public class GameManager : MonoBehaviour
         livesText.text = "Lives: " + lives;     // Show the lives
         gameOverText.gameObject.SetActive(false);   // Hide the game over text
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     static void GameOver()
     {
         Time.timeScale = 0;     // Stop the game
+        PlayerController.SetGameOver();     // set isGameOver to true
         // set gameOverText active
         gameOverText.gameObject.SetActive(true);
         gameOverText.text = "Game Over!";   // Show the game over text
     }
 
-    public static void IncrementScore()
+    public static void IncrementScore(int scoreIncrement)
     {
-        score++;
+        score += scoreIncrement;
         // Debug.Log("Lives: " + lives + " Score: " + score);
         scoreText.text = "Score: " + score;     // Show the score
     }

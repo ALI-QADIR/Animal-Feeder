@@ -31,12 +31,12 @@ public class Animal : MonoBehaviour
         else                                        // if current hunger is 1
         {
             Destroy(gameObject);                    // Destroy the animal
-            GameManager.IncrementScore();           // Increment the score
+            GameManager.IncrementScore(maxHunger);           // Increment the score
         }
     }
 
-        // When the animal collides with the projectile
-        private void OnTriggerEnter(Collider other)
+    // When the animal collides with the something
+    private void OnTriggerEnter(Collider other)
     {
 
         string tag = other.gameObject.tag;              // get tag of the other object

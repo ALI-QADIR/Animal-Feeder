@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa4bb28b4d5b2d4db23e07227dc9db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 6
 --- !u!114 &7009512055772679776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70a9af73e2d518d48bdc3c0dc41d54c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHunger: 1
+  maxHunger: 3
   currentHunger: 0
 --- !u!65 &6180840445115665213
 BoxCollider:
@@ -327,6 +327,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5013566663175306600, guid: 0e29004c38fd3d544b31804bfeb39b00, type: 3}
+      propertyPath: fill
+      value: 
+      objectReference: {fileID: 5013566664279577859}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e29004c38fd3d544b31804bfeb39b00, type: 3}
 --- !u!224 &5013566663941598733 stripped
@@ -334,3 +338,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5013566662369023470, guid: 0e29004c38fd3d544b31804bfeb39b00, type: 3}
   m_PrefabInstance: {fileID: 1573239779}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5013566664279577859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5013566663167733472, guid: 0e29004c38fd3d544b31804bfeb39b00, type: 3}
+  m_PrefabInstance: {fileID: 1573239779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
