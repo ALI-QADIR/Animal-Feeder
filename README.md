@@ -1,6 +1,6 @@
 # Animal Feeder
 
-Animal Feeder is a 3D game created in Unity where animals randomly come from the front and both sides of the screen, and the player's objective is to feed them by moving side-to-side and back-and-forth. The animals have different levels of hunger, and the player is rewarded different scores for feeding different animals. However, if an animal hits the player or walks past the camera unfed, the player loses a life. The game is over when the player loses all three lives.
+Animal Feeder is a 3D game created in Unity where animals randomly come from the front and both sides of the screen, and the player's objective is to feed them by moving side-to-side and back-and-forth. The animals have different levels of hunger, and the player is rewarded different scores for feeding different animals. However, if an animal hits the player or walks past the camera unfed, the player loses a life. The game is over when the player loses all three lives. You can Play this game on [my itch.io page](https://aliqadir.itch.io/project-2) in the browser or download the executable file for Windows or MacOS.
 
 ## How to Play
 
@@ -15,7 +15,7 @@ Different animals have different levels of hunger, so feeding each animal will r
 
 ## Installation
 
-To play the game, you can either play it in the browser or download the pre-built executable for your operating system from my [itch.io page](https://www,aliqadir.itch.io/project-2), or you can clone the repository and open it in Unity to build and run the game from the source code.
+To play the game, you can either play it in the browser or download the pre-built executable for your operating system from my [itch.io page](https://aliqadir.itch.io/project-2), or you can clone the repository and open it in Unity to build and run the game from the source code.
 
 ## License
 
