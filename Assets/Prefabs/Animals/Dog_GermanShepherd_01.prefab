@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHunger: 1
-  currentHunger: 0
+  currentHunger: 1
 --- !u!65 &8225550985727747072
 BoxCollider:
   m_ObjectHideFlags: 0
